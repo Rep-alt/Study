@@ -1,6 +1,7 @@
-Reconnaissance-
-Weaponization-
+Reconnaissance -
+Weaponization -
 Delivery - 
 Exploitation - 
 Installation - 
-Command A
+Command and Control - 
+Actions on Objective - 
