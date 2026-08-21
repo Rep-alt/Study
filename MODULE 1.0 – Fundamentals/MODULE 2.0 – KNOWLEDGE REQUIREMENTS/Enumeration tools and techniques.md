@@ -55,7 +55,7 @@ nmap -sV --script=banner <target>Banner grabbingCopied!
 
 nmap --script dns-brute <target>DNS brute forceCopied!
 
-🪟 enum4linux – SMB/Samba EnumerationLinux
+## 🪟 enum4linux – SMB/Samba EnumerationLinux
 
 enum4linux <target>Quick default enumerationCopied!
 
@@ -87,7 +87,7 @@ enum4linux-ng -A <target> -oJ out.jsonFull scan, JSON output (ng version)Copied!
 
 enum4linux-ng -S <target>List shares only (ng version)Copied!
 
-🪟 WindowsEnum – Windows Local EnumerationWindows
+### 🪟 WindowsEnum – Windows Local EnumerationWindows
 
 powershell -ep bypass .\WindowsEnum.ps1Run with execution policy bypassCopied!
 
@@ -113,7 +113,7 @@ WindowsEnum checks: PowerShell history and transcriptPS history & transcript fil
 
 WindowsEnum checks: AV/EDR product detectionAntivirus & EDR identificationCopied!
 
-🦅 JAWS – Just Another Windows Enum ScriptWindows
+#### 🦅 JAWS – Just Another Windows Enum ScriptWindows
 
 powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1Run JAWSCopied!
 
@@ -143,7 +143,7 @@ JAWS checks: Potential privilege escalation vectorsPrivesc vector identification
 
 
 
-🌐 Network EnumerationLinux & Windows
+##### 🌐 Network EnumerationLinux & Windows
 
 netdiscover -r 192.168.1.0/24ARP host discoveryCopied!
 
@@ -171,7 +171,7 @@ snmpwalk -v2c -c public <target>SNMP walkCopied!
 
 snmp-check <target>SNMP info dumpCopied!
 
-🌍 DNS EnumerationLinux
+###### 🌍 DNS EnumerationLinux
 
 dnsrecon -d <domain> -t stdStandard DNS reconCopied!
 
