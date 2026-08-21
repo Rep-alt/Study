@@ -227,69 +227,69 @@ python3 -m http.server 80Serve files (attacker machine)Copied!
 
 	-smbclient -L //<target>/ -NList shares (anonymous)Copied!
 
-smbclient //<target>/share -NConnect to share (anonymous)Copied!
-
-smbmap -H <target>List shares with permissionsCopied!
-
-smbmap -H <target> -u 'user' -p 'pass'Authenticated share mapCopied!
-
-crackmapexec smb <target>Quick SMB infoCopied!
-
-crackmapexec smb <target> -u 'user' -p 'pass' --sharesEnum shares (auth)Copied!
-
-crackmapexec smb <target> -u 'user' -p 'pass' --usersEnum users (auth)Copied!
-
-crackmapexec smb <target> -u 'user' -p 'pass' --groupsEnum groups (auth)Copied!
-
-rpcclient -U "" -N <target>Anonymous RPC connectionCopied!
-
-rpcclient -U "user%pass" <target>Authenticated RPCCopied!
-
-rpcclient $> enumdomusersEnumerate domain users (inside rpcclient)Copied!
-
-rpcclient $> enumdomgroupsEnumerate domain groupsCopied!
-
-rpcclient $> querydominfoQuery domain infoCopied!
-
-impacket-smbclient <target>SMBclient via ImpacketCopied!
-
-nmap --script smb-vuln-ms17-010 <target>Check EternalBlueCopied!
+	smbclient //<target>/share -NConnect to share (anonymous)Copied!
+	
+	smbmap -H <target>List shares with permissionsCopied!
+	
+	smbmap -H <target> -u 'user' -p 'pass'Authenticated share mapCopied!
+	
+	crackmapexec smb <target>Quick SMB infoCopied!
+	
+	crackmapexec smb <target> -u 'user' -p 'pass' --sharesEnum shares (auth)Copied!
+	
+	crackmapexec smb <target> -u 'user' -p 'pass' --usersEnum users (auth)Copied!
+	
+	crackmapexec smb <target> -u 'user' -p 'pass' --groupsEnum groups (auth)Copied!
+	
+	rpcclient -U "" -N <target>Anonymous RPC connectionCopied!
+	
+	rpcclient -U "user%pass" <target>Authenticated RPCCopied!
+	
+	rpcclient $> enumdomusersEnumerate domain users (inside rpcclient)Copied!
+	
+	rpcclient $> enumdomgroupsEnumerate domain groupsCopied!
+	
+	rpcclient $> querydominfoQuery domain infoCopied!
+	
+	impacket-smbclient <target>SMBclient via ImpacketCopied!
+	
+	nmap --script smb-vuln-ms17-010 <target>Check EternalBlueCopied!
 
 🏰 Active Directory EnumerationLinux & Windows
 
-	-bloodhound-python -u user -p pass -d domain.local -ns <dc-ip> -c AllBloodHound data collectionCopied!
+	bloodhound-python -u user -p pass -d domain.local -ns <dc-ip> -c AllBloodHound data collectionCopied!
 
-	-SharpHound.exe -c AllBloodHound (Windows, C# ingestor)Copied!
+	SharpHound.exe -c AllBloodHound (Windows, C# ingestor)Copied!
 
-	-ldapsearch -x -H ldap://<dc-ip> -b "dc=domain,dc=local"Anonymous LDAP searchCopied!
+	ldapsearch -x -H ldap://<dc-ip> -b "dc=domain,dc=local"Anonymous LDAP searchCopied!
 
-	-ldapsearch -x -H ldap://<dc-ip> -D "user@domain.local" -w pass -b "dc=domain,dc=local"Auth LDAP searchCopied!
+	ldapsearch -x -H ldap://<dc-ip> -D "user@domain.local" -w pass -b "dc=domain,dc=local"Auth LDAP searchCopied!
 
-	-python3 GetADUsers.py -all domain.local/user:passDump all AD users (Impacket)Copied!
+	python3 GetADUsers.py -all domain.local/user:passDump all AD users (Impacket)Copied!
 
-	-python3 GetUserSPNs.py domain.local/user:passKerberoastable SPNsCopied!
+	python3 GetUserSPNs.py domain.local/user:passKerberoastable SPNsCopied!
 
-	-python3 GetNPUsers.py domain.local/ -usersfile users.txt -no-passAS-REP roastingCopied!
+	python3 GetNPUsers.py domain.local/ -usersfile users.txt -no-passAS-REP roastingCopied!
 
-crackmapexec smb <dc-ip> -u user -p pass --active-usersActive AD usersCopied!
+	crackmapexec smb <dc-ip> -u user -p pass --active-usersActive AD usersCopied!
 
-net user /domainList domain users (Windows)Copied!
+	net user /domainList domain users (Windows)Copied!
 
-net group /domainList domain groups (Windows)Copied!
-
-net group "Domain Admins" /domainDomain Admins members (Windows)Copied!
-
-Get-ADUser -Filter * | Select Name,SamAccountNameAD users (PowerShell)Copied!
-
-Get-ADComputer -Filter * | Select Name,OperatingSystemAD computers (PowerShell)Copied!
-
-powerview: Get-DomainUserPowerView: dump all domain usersCopied!
-
-powerview: Get-DomainGroupPowerView: dump all domain groupsCopied!
-
-powerview: Find-LocalAdminAccessPowerView: find machines where current user is adminCopied!
-
-powerview: Get-DomainTrustPowerView: enumerate domain trustsCopied!
+	net group /domainList domain groups (Windows)Copied!
+	
+	net group "Domain Admins" /domainDomain Admins members (Windows)Copied!
+	
+	Get-ADUser -Filter * | Select Name,SamAccountNameAD users (PowerShell)Copied!
+	
+	Get-ADComputer -Filter * | Select Name,OperatingSystemAD computers (PowerShell)Copied!
+	
+	powerview: Get-DomainUserPowerView: dump all domain usersCopied!
+	
+	powerview: Get-DomainGroupPowerView: dump all domain groupsCopied!
+	
+	powerview: Find-LocalAdminAccessPowerView: find machines where current user is adminCopied!
+	
+	powerview: Get-DomainTrustPowerView: enumerate domain trustsCopied!
 
 🔑 SNMP EnumerationLinux
 
