@@ -55,7 +55,7 @@
 	
 	nmap --script dns-brute <target>DNS brute forceCopied!
 
-🪟 enum4linux – SMB/Samba EnumerationLinux
+enum4linux – SMB/Samba EnumerationLinux
 
 	-enum4linux <target>Quick default enumerationCopied!
 
@@ -87,7 +87,7 @@
 	
 	enum4linux-ng -S <target>List shares only (ng version)Copied!
 
-🪟 WindowsEnum – Windows Local EnumerationWindows
+WindowsEnum – Windows Local EnumerationWindows
 
 	-powershell -ep bypass .\WindowsEnum.ps1Run with execution policy bypassCopied!
 
@@ -141,7 +141,7 @@ JAWS – Just Another Windows Enum ScriptWindows
 	
 	JAWS checks: Potential privilege escalation vectorsPrivesc vector identificationCopied!
 
-🌐 Network EnumerationLinux & Windows
+Network EnumerationLinux & Windows
 
 	-netdiscover -r 192.168.1.0/24ARP host discoveryCopied!
 
@@ -169,7 +169,7 @@ JAWS – Just Another Windows Enum ScriptWindows
 	
 	snmp-check <target>SNMP info dumpCopied!
 
-🌍 DNS EnumerationLinux
+DNS EnumerationLinux
 
 	-dnsrecon -d <domain> -t stdStandard DNS reconCopied!
 
@@ -193,7 +193,7 @@ JAWS – Just Another Windows Enum ScriptWindows
 	
 	theHarvester -d <domain> -b allEmail, subdomain harvestingCopied!
 
-🌐 Web EnumerationLinux
+Web EnumerationLinux
 
 	-gobuster dir -u http://<target> -w /usr/share/wordlists/dirb/common.txtDirectory brute forceCopied!
 
@@ -221,7 +221,7 @@ JAWS – Just Another Windows Enum ScriptWindows
 	
 	python3 -m http.server 80Serve files (attacker machine)Copied!
 
-🗂️ SMB EnumerationLinux
+SMB EnumerationLinux
 
 	-smbclient -L //<target>/ -NList shares (anonymous)Copied!
 
@@ -253,7 +253,7 @@ JAWS – Just Another Windows Enum ScriptWindows
 	
 	nmap --script smb-vuln-ms17-010 <target>Check EternalBlueCopied!
 
-🏰 Active Directory EnumerationLinux & Windows
+Active Directory EnumerationLinux & Windows
 
 	bloodhound-python -u user -p pass -d domain.local -ns <dc-ip> -c AllBloodHound data collectionCopied!
 
@@ -289,7 +289,7 @@ JAWS – Just Another Windows Enum ScriptWindows
 	
 	powerview: Get-DomainTrustPowerView: enumerate domain trustsCopied!
 
-🔑 SNMP EnumerationLinux
+SNMP EnumerationLinux
 
 	-snmpwalk -v1 -c public <target>SNMPv1 walk with 'public' communityCopied!
 
@@ -307,7 +307,7 @@ JAWS – Just Another Windows Enum ScriptWindows
 
 	-nmap -sU -p 161 --script=snmp-brute <target>Nmap SNMP bruteCopied!
 
-📋 Local System Enumeration – LinuxLinux
+Local System Enumeration – LinuxLinux
 
 	-uname -aKernel versionCopied!
 
