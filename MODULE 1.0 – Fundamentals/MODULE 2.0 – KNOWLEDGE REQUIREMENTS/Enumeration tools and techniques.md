@@ -313,51 +313,51 @@ nmap -sU -p 161 --script=snmp-brute <target>Nmap SNMP bruteCopied!
 
 	-uname -aKernel versionCopied!
 
-cat /etc/os-releaseOS infoCopied!
+	-cat /etc/os-releaseOS infoCopied!
 
-hostname && id && whoamiHost and current userCopied!
+	-hostname && id && whoamiHost and current userCopied!
 
-cat /etc/passwdUser accountsCopied!
+	-cat /etc/passwdUser accountsCopied!
 
-cat /etc/groupGroup membershipsCopied!
+	-cat /etc/groupGroup membershipsCopied!
 
-lastLast loginsCopied!
+	-lastLast loginsCopied!
 
-wLogged in usersCopied!
+	-wLogged in usersCopied!
 
-ps auxRunning processesCopied!
+	-ps auxRunning processesCopied!
 
-df -hDisk usageCopied!
+	-df -hDisk usageCopied!
 
-mountMounted filesystemsCopied!
+	-mountMounted filesystemsCopied!
 
-find / -name "*.conf" 2>/dev/nullConfig filesCopied!
+	-find / -name "*.conf" 2>/dev/nullConfig filesCopied!
 
-find / -name "id_rsa" 2>/dev/nullSSH private keysCopied!
+	-find / -name "id_rsa" 2>/dev/nullSSH private keysCopied!
 
-cat ~/.ssh/known_hostsKnown SSH hostsCopied!
+	-cat ~/.ssh/known_hostsKnown SSH hostsCopied!
 
-historyCommand historyCopied!
+	-historyCommand historyCopied!
 
-crontab -l && cat /etc/crontabCron jobsCopied!
+	-crontab -l && cat /etc/crontabCron jobsCopied!
 
-iptables -LFirewall rulesCopied!
+	-iptables -LFirewall rulesCopied!
 
 Local System Enumeration – WindowsWindows
 
 	-systeminfoFull system infoCopied!
 
-whoami /allFull user info + privilegesCopied!
+	-whoami /allFull user info + privilegesCopied!
 
-net userLocal usersCopied!
+	-net userLocal usersCopied!
 
-net localgroupLocal groupsCopied!
+	-net localgroupLocal groupsCopied!
 
-net localgroup administratorsAdmin group membersCopied!
+	-net localgroup administratorsAdmin group membersCopied!
 
-ipconfig /allNetwork configCopied!
+	-ipconfig /allNetwork configCopied!
 
-netstat -anoActive connectionsCopied!
+	-netstat -anoActive connectionsCopied!
 
 	-tasklist /SVCRunning processes with servicesCopied!
 
