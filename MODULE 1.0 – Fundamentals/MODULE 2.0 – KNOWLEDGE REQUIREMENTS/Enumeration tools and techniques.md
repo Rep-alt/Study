@@ -118,7 +118,6 @@ JAWS checks: Interesting files (passwords, configs)Sensitive file discoveryCopie
 
 JAWS checks: Potential privilege escalation vectorsPrivesc vector identificationCopied!
 
-🔺
 
 🌐 Network EnumerationLinux & Windows
 
