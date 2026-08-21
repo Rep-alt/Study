@@ -343,7 +343,7 @@ crontab -l && cat /etc/crontabCron jobsCopied!
 
 iptables -LFirewall rulesCopied!
 
- Local System Enumeration – WindowsWindows
+###### Local System Enumeration – WindowsWindows
 
 systeminfoFull system infoCopied!
 
