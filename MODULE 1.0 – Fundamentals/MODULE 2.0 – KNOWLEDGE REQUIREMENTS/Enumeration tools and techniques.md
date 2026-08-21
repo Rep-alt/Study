@@ -25,17 +25,17 @@
 
  Nmap – Network ScanningLinux & Windows
 
-nmap -sn 192.168.1.0/24Host discovery (ping sweep)Copied!
+	-nmap -sn 192.168.1.0/24Host discovery (ping sweep)Copied!
 
-nmap -sV -sC -p- <target>Full port scan with scripts & version detectionCopied!
+	-nmap -sV -sC -p- <target>Full port scan with scripts & version detectionCopied!
 
-nmap -sS -T4 <target>SYN stealth scan (fast)Copied!
+	-nmap -sS -T4 <target>SYN stealth scan (fast)Copied!
 
-nmap -sU -p 53,161,162 <target>UDP scan on common portsCopied!
+		-nmap -sU -p 53,161,162 <target>UDP scan on common -portsCopied!
 
-nmap -O <target>OS detectionCopied!
+	-nmap -O <target>OS detectionCopied!
 
-nmap -A -T4 <target>Aggressive scan (OS, version, scripts, traceroute)Copied!
+	-nmap -A -T4 <target>Aggressive scan (OS, version, scripts, traceroute)Copied!
 
 nmap --script vuln <target>Run vulnerability detection scriptsCopied!
 
@@ -57,7 +57,7 @@ nmap --script dns-brute <target>DNS brute forceCopied!
 
 🪟 enum4linux – SMB/Samba EnumerationLinux
 
-enum4linux <target>Quick default enumerationCopied!
+	-enum4linux <target>Quick default enumerationCopied!
 
 enum4linux -a <target>Full enumeration (all checks)Copied!
 
@@ -87,7 +87,7 @@ enum4linux-ng -A <target> -oJ out.jsonFull scan, JSON output (ng version)Copied!
 
 enum4linux-ng -S <target>List shares only (ng version)Copied!
 
-### 🪟 WindowsEnum – Windows Local EnumerationWindows
+🪟 WindowsEnum – Windows Local EnumerationWindows
 
 powershell -ep bypass .\WindowsEnum.ps1Run with execution policy bypassCopied!
 
