@@ -91,137 +91,134 @@ enum4linux-ng -S <target>List shares only (ng version)Copied!
 
 	-powershell -ep bypass .\WindowsEnum.ps1Run with execution policy bypassCopied!
 
-.\WindowsEnum.ps1Basic local system enumerationCopied!
-
-WindowsEnum checks: System infoHostname, OS, architecture, patchesCopied!
-
-WindowsEnum checks: Local users and groupsLocal user & group enumerationCopied!
-
-WindowsEnum checks: Running processes and servicesActive processes & services listingCopied!
-
-WindowsEnum checks: Scheduled tasksScheduled task enumerationCopied!
-
-WindowsEnum checks: Network interfaces and connectionsNetwork config & active connectionsCopied!
-
-WindowsEnum checks: Installed softwareInstalled application listingCopied!
-
-WindowsEnum checks: Shared foldersNetwork share enumerationCopied!
-
-WindowsEnum checks: Registry autorunsAutorun entry detectionCopied!
-
-WindowsEnum checks: PowerShell history and transcriptPS history & transcript filesCopied!
-
-WindowsEnum checks: AV/EDR product detectionAntivirus & EDR identificationCopied!
+	.\WindowsEnum.ps1Basic local system enumerationCopied!
+	
+	WindowsEnum checks: System infoHostname, OS, architecture, patchesCopied!
+	
+	WindowsEnum checks: Local users and groupsLocal user & group enumerationCopied!
+	
+	WindowsEnum checks: Running processes and servicesActive processes & services listingCopied!
+	
+	WindowsEnum checks: Scheduled tasksScheduled task enumerationCopied!
+	
+	WindowsEnum checks: Network interfaces and connectionsNetwork config & active connectionsCopied!
+	
+	WindowsEnum checks: Installed softwareInstalled application listingCopied!
+	
+	WindowsEnum checks: Shared foldersNetwork share enumerationCopied!
+	
+	WindowsEnum checks: Registry autorunsAutorun entry detectionCopied!
+	
+	WindowsEnum checks: PowerShell history and transcriptPS history & transcript filesCopied!
+	
+	WindowsEnum checks: AV/EDR product detectionAntivirus & EDR identificationCopied!
 
  JAWS – Just Another Windows Enum ScriptWindows
 
 	-powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1Run JAWSCopied!
 
-powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1 -OutputFilename JAWS-Enum.txtSave output to fileCopied!
-
-JAWS checks: System info (OS, arch, hostname, domain)System information gatheringCopied!
-
-JAWS checks: Network configuration (IPs, DNS, routes)Network config enumerationCopied!
-
-JAWS checks: Running processesActive process listingCopied!
-
-JAWS checks: Scheduled tasksScheduled task enumerationCopied!
-
-JAWS checks: Local users and groupsUser & group enumerationCopied!
-
-JAWS checks: Installed software and patchesSoftware & patch listingCopied!
-
-JAWS checks: Writeable directories and filesWritable path discoveryCopied!
-
-JAWS checks: AV/EDR detectionSecurity product identificationCopied!
-
-JAWS checks: Mapped drives and sharesMapped drive enumerationCopied!
-
-JAWS checks: Interesting files (passwords, configs)Sensitive file discoveryCopied!
-
-JAWS checks: Potential privilege escalation vectorsPrivesc vector identificationCopied!
-
-
-
+	powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1 -OutputFilename JAWS-Enum.txtSave output to fileCopied!
+	
+	JAWS checks: System info (OS, arch, hostname, domain)System information gatheringCopied!
+	
+	JAWS checks: Network configuration (IPs, DNS, routes)Network config enumerationCopied!
+	
+	JAWS checks: Running processesActive process listingCopied!
+	
+	JAWS checks: Scheduled tasksScheduled task enumerationCopied!
+	
+	JAWS checks: Local users and groupsUser & group enumerationCopied!
+	
+	JAWS checks: Installed software and patchesSoftware & patch listingCopied!
+	
+	JAWS checks: Writeable directories and filesWritable path discoveryCopied!
+	
+	JAWS checks: AV/EDR detectionSecurity product identificationCopied!
+	
+	JAWS checks: Mapped drives and sharesMapped drive enumerationCopied!
+	
+	JAWS checks: Interesting files (passwords, configs)Sensitive file discoveryCopied!
+	
+	JAWS checks: Potential privilege escalation vectorsPrivesc vector identificationCopied!
 🌐 Network EnumerationLinux & Windows
 
 	-netdiscover -r 192.168.1.0/24ARP host discoveryCopied!
 
-arp-scan --localnetARP scan local networkCopied!
-
-masscan -p1-65535 <target> --rate=1000Fast full port scanCopied!
-
-netstat -tulnp / netstat -anoActive connections and listeners (Linux / Windows)Copied!
-
-ss -tulnpSocket statistics (Linux)Copied!
-
-route -n / route printRouting table (Linux / Windows)Copied!
-
-ip neigh showARP cache (Linux)Copied!
-
-arp -aARP cache (Windows/Linux)Copied!
-
-nbtscan 192.168.1.0/24NetBIOS scanCopied!
-
-unicornscan <target>:1-65535Fast async port scanCopied!
-
-onesixtyone -c community.txt -i hosts.txtSNMP community string bruteCopied!
-
-snmpwalk -v2c -c public <target>SNMP walkCopied!
-
-snmp-check <target>SNMP info dumpCopied!
+	arp-scan --localnetARP scan local networkCopied!
+	
+	masscan -p1-65535 <target> --rate=1000Fast full port scanCopied!
+	
+	netstat -tulnp / netstat -anoActive connections and listeners (Linux / Windows)Copied!
+	
+	ss -tulnpSocket statistics (Linux)Copied!
+	
+	route -n / route printRouting table (Linux / Windows)Copied!
+	
+	ip neigh showARP cache (Linux)Copied!
+	
+	arp -aARP cache (Windows/Linux)Copied!
+	
+	nbtscan 192.168.1.0/24NetBIOS scanCopied!
+	
+	unicornscan <target>:1-65535Fast async port scanCopied!
+	
+	onesixtyone -c community.txt -i hosts.txtSNMP community string bruteCopied!
+	
+	snmpwalk -v2c -c public <target>SNMP walkCopied!
+	
+	snmp-check <target>SNMP info dumpCopied!
 
 🌍 DNS EnumerationLinux
 
 	-dnsrecon -d <domain> -t stdStandard DNS reconCopied!
 
-dnsrecon -d <domain> -t axfrZone transfer attemptCopied!
-
-dnsenum <domain>DNS enumeration + zone transferCopied!
-
-dig axfr <domain> @<nameserver>Zone transfer (Linux)">Copied!
-
-host -t ns <domain>List nameserversCopied!
-
-host -t mx <domain>List mail serversCopied!
-
-nslookup -type=any <domain>All DNS recordsCopied!
-
-fierce --domain <domain>DNS brute forceCopied!
-
-gobuster dns -d <domain> -w /usr/share/wordlists/subdomains.txtDNS subdomain brute forceCopied!
-
-amass enum -d <domain>Passive/active subdomain enumCopied!
-
-theHarvester -d <domain> -b allEmail, subdomain harvestingCopied!
+	dnsrecon -d <domain> -t axfrZone transfer attemptCopied!
+	
+	dnsenum <domain>DNS enumeration + zone transferCopied!
+	
+	dig axfr <domain> @<nameserver>Zone transfer (Linux)">Copied!
+	
+	host -t ns <domain>List nameserversCopied!
+	
+	host -t mx <domain>List mail serversCopied!
+	
+	nslookup -type=any <domain>All DNS recordsCopied!
+	
+	fierce --domain <domain>DNS brute forceCopied!
+	
+	gobuster dns -d <domain> -w /usr/share/wordlists/subdomains.txtDNS subdomain brute forceCopied!
+	
+	amass enum -d <domain>Passive/active subdomain enumCopied!
+	
+	theHarvester -d <domain> -b allEmail, subdomain harvestingCopied!
 
 🌐 Web EnumerationLinux
 
 	-gobuster dir -u http://<target> -w /usr/share/wordlists/dirb/common.txtDirectory brute forceCopied!
 
-gobuster dir -u http://<target> -w wordlist.txt -x php,html,txtWith extensionsCopied!
-
-ffuf -w wordlist.txt -u http://<target>/FUZZDirectory fuzzingCopied!
-
-ffuf -w wordlist.txt -u http://<target>/FUZZ -fc 404Filter 404sCopied!
-
-nikto -h http://<target>Web vulnerability scannerCopied!
-
-nikto -h http://<target> -output nikto.txtSave nikto outputCopied!
-
-wfuzz -c -w wordlist.txt http://<target>/FUZZWeb fuzzerCopied!
-
-whatweb http://<target>Technology fingerprintingCopied!
-
-curl -I http://<target>HTTP headers (banner grab)Copied!
-
-wafw00f http://<target>WAF detectionCopied!
-
-dirb http://<target> /usr/share/wordlists/dirb/common.txtDirectory brute with dirbCopied!
-
-feroxbuster -u http://<target> -w wordlist.txtRecursive directory brute forceCopied!
-
-python3 -m http.server 80Serve files (attacker machine)Copied!
+	gobuster dir -u http://<target> -w wordlist.txt -x php,html,txtWith extensionsCopied!
+	
+	ffuf -w wordlist.txt -u http://<target>/FUZZDirectory fuzzingCopied!
+	
+	ffuf -w wordlist.txt -u http://<target>/FUZZ -fc 404Filter 404sCopied!
+	
+	nikto -h http://<target>Web vulnerability scannerCopied!
+	
+	nikto -h http://<target> -output nikto.txtSave nikto outputCopied!
+	
+	wfuzz -c -w wordlist.txt http://<target>/FUZZWeb fuzzerCopied!
+	
+	whatweb http://<target>Technology fingerprintingCopied!
+	
+	curl -I http://<target>HTTP headers (banner grab)Copied!
+	
+	wafw00f http://<target>WAF detectionCopied!
+	
+	dirb http://<target> /usr/share/wordlists/dirb/common.txtDirectory brute with dirbCopied!
+	
+	feroxbuster -u http://<target> -w wordlist.txtRecursive directory brute forceCopied!
+	
+	python3 -m http.server 80Serve files (attacker machine)Copied!
 
 🗂️ SMB EnumerationLinux
 
