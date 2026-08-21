@@ -54,7 +54,8 @@ nmap -iL targets.txt -sVScan from host listCopied!
 nmap -sV --script=banner <target>Banner grabbingCopied!
 
 nmap --script dns-brute <target>DNS brute forceCopied!
- enum4linux – SMB/Samba EnumerationLinux
+
+enum4linux – SMB/Samba EnumerationLinux 
 
 enum4linux <target>Quick default enumerationCopied!
 
