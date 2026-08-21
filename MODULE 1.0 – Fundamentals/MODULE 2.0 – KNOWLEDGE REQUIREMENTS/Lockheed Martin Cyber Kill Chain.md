@@ -37,4 +37,4 @@ Steps that go into this would include:
 	- escalate privileges
 	- download additional payloads
 
-**Actions on Objective** - 
+**Actions on Objective** - Finally, mission execution,
