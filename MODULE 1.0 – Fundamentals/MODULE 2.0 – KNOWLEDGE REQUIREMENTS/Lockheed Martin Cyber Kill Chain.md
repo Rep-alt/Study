@@ -12,12 +12,15 @@ Steps that go into this would include:
 
 **Exploitation** - The delivered payload is activated by exploiting a vulnerability via software vulnerabilities, user execution, Misconfigurations, and script or code execution
 
-**Installation** -  This is where an attacker establishes a foothold in the victims network by installing malware or using methods to ensure persistence 
+**Installation** -  This is where an attacker establishes a foothold in the victims network by installing malware or using methods to ensure persistence like modifying:
 - registry run keys
 - scheduled tasks
 - services
 - startup folder entries
 - browser extensions
 - kernel-level implants
+
+
 **Command and Control** - 
+
 **Actions on Objective** - 
