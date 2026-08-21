@@ -4,7 +4,7 @@ Steps that go into this would include:
 - Identify the target
 - Gather information  ( Collect emails, usernames, tech stack, ip ranges, exposed services )
 - Map weaknesses (Look for outdated systems. misconfigurations)
-Weaponization - 
+Weaponization - Creating a malicious payload
 Delivery - 
 Exploitation - 
 Installation - 
