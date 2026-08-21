@@ -24,6 +24,11 @@ Steps that go into this would include:
 - accounts
 
 **Command and Control** - When the installed malware enables a connection to the attackers infrastructure to control the compromised system. Comms look like:
-
+- outbound network connections
+	- http/https
+	- dns tunneling
+	- encrypted channels
+	- custom protocols
+- Beaconing - 
 
 **Actions on Objective** - 
