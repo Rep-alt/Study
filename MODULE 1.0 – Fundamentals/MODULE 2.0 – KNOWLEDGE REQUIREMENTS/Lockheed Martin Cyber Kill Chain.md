@@ -2,8 +2,8 @@ Identifies what adversaries must complete in order to accomplish their objective
 Reconnaissance - Studying the target before doing anything overt
 Steps that go into this would include:
 - Identify the target
-- Gather information Collect emails)
-- Map weaknesses
+- Gather information  ( Collect emails, usernames, tech stack, ip ranges, exposed services )
+- Map weaknesses (Look for outdated systems)
 Weaponization -
 Delivery - 
 Exploitation - 
