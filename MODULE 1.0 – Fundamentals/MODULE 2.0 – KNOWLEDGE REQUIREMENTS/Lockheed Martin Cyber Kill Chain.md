@@ -29,6 +29,12 @@ Steps that go into this would include:
 	- dns tunneling
 	- encrypted channels
 	- custom protocols
-- Beaconing - 
+- Beaconing - periodically checks in with an attacker
+- Receiving instructions
+	- run scripts
+	- move laterally
+	- exfiltrate data
+	- escalate privileges
+	- download a
 
 **Actions on Objective** - 
