@@ -6,7 +6,7 @@ Steps that go into this would include:
 - Map weaknesses (Look for outdated systems. misconfigurations)
 Weaponization - Creating a malicious payload and using an exploit to make the delivery
 Delivery - Transmission of the payload to the victim via Phishing emails, Drive-by downloads, USB drops, social engineering, and **Exploiting Exposed Services**
-Exploitation - The delivered payload is activated by exploiting a vulnerability via software vulnerabilities, user execution, 
-Installation -  
+Exploitation - The delivered payload is activated by exploiting a vulnerability via software vulnerabilities, user execution, Misconfigurations, and script or code execution
+Installation -  establishing a foothold
 Command and Control - 
 Actions on Objective - 
