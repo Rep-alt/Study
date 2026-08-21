@@ -259,17 +259,17 @@ nmap --script smb-vuln-ms17-010 <target>Check EternalBlueCopied!
 
 	-bloodhound-python -u user -p pass -d domain.local -ns <dc-ip> -c AllBloodHound data collectionCopied!
 
-SharpHound.exe -c AllBloodHound (Windows, C# ingestor)Copied!
+	-SharpHound.exe -c AllBloodHound (Windows, C# ingestor)Copied!
 
-ldapsearch -x -H ldap://<dc-ip> -b "dc=domain,dc=local"Anonymous LDAP searchCopied!
+	-ldapsearch -x -H ldap://<dc-ip> -b "dc=domain,dc=local"Anonymous LDAP searchCopied!
 
-ldapsearch -x -H ldap://<dc-ip> -D "user@domain.local" -w pass -b "dc=domain,dc=local"Auth LDAP searchCopied!
+	-ldapsearch -x -H ldap://<dc-ip> -D "user@domain.local" -w pass -b "dc=domain,dc=local"Auth LDAP searchCopied!
 
-python3 GetADUsers.py -all domain.local/user:passDump all AD users (Impacket)Copied!
+	-python3 GetADUsers.py -all domain.local/user:passDump all AD users (Impacket)Copied!
 
-python3 GetUserSPNs.py domain.local/user:passKerberoastable SPNsCopied!
+	-python3 GetUserSPNs.py domain.local/user:passKerberoastable SPNsCopied!
 
-python3 GetNPUsers.py domain.local/ -usersfile users.txt -no-passAS-REP roastingCopied!
+	-python3 GetNPUsers.py domain.local/ -usersfile users.txt -no-passAS-REP roastingCopied!
 
 crackmapexec smb <dc-ip> -u user -p pass --active-usersActive AD usersCopied!
 
@@ -291,23 +291,23 @@ powerview: Find-LocalAdminAccessPowerView: find machines where current user is a
 
 powerview: Get-DomainTrustPowerView: enumerate domain trustsCopied!
 
-	-🔑 SNMP EnumerationLinux
+🔑 SNMP EnumerationLinux
 
-snmpwalk -v1 -c public <target>SNMPv1 walk with 'public' communityCopied!
+	-snmpwalk -v1 -c public <target>SNMPv1 walk with 'public' communityCopied!
 
-snmpwalk -v2c -c public <target>SNMPv2c walkCopied!
+	-snmpwalk -v2c -c public <target>SNMPv2c walkCopied!
 
-snmpwalk -v2c -c public <target> 1.3.6.1.2.1.25.4.2.1.2Running processes via SNMPCopied!
+	-snmpwalk -v2c -c public <target> 1.3.6.1.2.1.25.4.2.1.2Running processes via SNMPCopied!
 
-snmp-check <target>Detailed SNMP enumerationCopied!
+	-snmp-check <target>Detailed SNMP enumerationCopied!
 
-onesixtyone -c /usr/share/doc/onesixtyone/dict.txt <target>Community string bruteCopied!
+	-onesixtyone -c /usr/share/doc/onesixtyone/dict.txt <target>Community string bruteCopied!
 
-snmpbulkwalk -v2c -c public <target>Bulk walk (faster)Copied!
+	-snmpbulkwalk -v2c -c public <target>Bulk walk (faster)Copied!
 
-hydra -P community.txt <target> snmpBrute force SNMP communitiesCopied!
+	-hydra -P community.txt <target> snmpBrute force SNMP communitiesCopied!
 
-nmap -sU -p 161 --script=snmp-brute <target>Nmap SNMP bruteCopied!
+	-nmap -sU -p 161 --script=snmp-brute <target>Nmap SNMP bruteCopied!
 
 📋 Local System Enumeration – LinuxLinux
 
