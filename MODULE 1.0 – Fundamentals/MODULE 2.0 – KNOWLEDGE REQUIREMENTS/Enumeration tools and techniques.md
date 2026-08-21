@@ -1,6 +1,29 @@
   
+## 1. Nmap – Network Scanning
 
-🔍 Nmap – Network ScanningLinux & Windows
+**Why:** Nmap is your first look at any target. It tells you what's alive, what ports are open, what services are running, and what OS the machine might be. Without this, you're operating blind — you don't know what attack surface even exists.
+
+**When:** This is almost always **the very first tool you run** on an engagement. Before touching anything else, you need a map of the network. You come back to Nmap repeatedly — once for host discovery, again for deep port scans, and again to run specific NSE scripts once you've identified interesting services.
+
+##  2. enum4linux – SMB/Samba Enumeration
+
+**Why:** SMB (port 445) is one of the richest sources of information on a Windows or Samba host. enum4linux specifically extracts users, groups, shares, password policies, and domain info — all things that feed directly into later attacks like password spraying, share access, or RID brute-forcing.
+
+**When:** Run this **after Nmap reveals port 445 or 139 open** on a target. Especially valuable in internal network tests against Windows environments. If anonymous/null sessions are allowed (common in older or misconfigured systems), you can pull a full user list without any credentials at all.
+
+##  3. WindowsEnum – Windows Local Enumeration
+
+**Why:** Once you have a shell or RDP access on a Windows machine, you need to understand _exactly_ what you're working with — the OS version, patch level, local users, running services, and autoruns. This feeds your privilege escalation decision-making.
+
+**When:** Used **immediately after gaining initial access** to a Windows host. You've landed a shell — now you need situational awareness before you make your next move. WindowsEnum automates the tedious manual commands so you can survey the host quickly without triggering too much noise.
+
+##  4. JAWS – Just Another Windows Enum Script
+
+**Why:** JAWS does very similar work to WindowsEnum but is specifically tuned to surface **privilege escalation vectors** — writable paths, unquoted service paths, interesting files, and credential clues. It's more privesc-focused than general situational awareness.
+
+**When:** Run this **right after landing on a Windows box**, particularly when you're a low-privileged user trying to escalate. It's a PowerShell script, so it's easy to transfer and run in-memory. Many testers run both JAWS and WindowsEnum together for a more complete picture, or choose JAWS when privesc is the immediate goal.
+
+# Nmap – Network ScanningLinux & Windows
 
 nmap -sn 192.168.1.0/24Host discovery (ping sweep)Copied!
 
@@ -31,8 +54,7 @@ nmap -iL targets.txt -sVScan from host listCopied!
 nmap -sV --script=banner <target>Banner grabbingCopied!
 
 nmap --script dns-brute <target>DNS brute forceCopied!
-
-🪟 enum4linux – SMB/Samba EnumerationLinux
+ enum4linux – SMB/Samba EnumerationLinux
 
 enum4linux <target>Quick default enumerationCopied!
 
@@ -117,6 +139,7 @@ JAWS checks: Mapped drives and sharesMapped drive enumerationCopied!
 JAWS checks: Interesting files (passwords, configs)Sensitive file discoveryCopied!
 
 JAWS checks: Potential privilege escalation vectorsPrivesc vector identificationCopied!
+
 
 
 🌐 Network EnumerationLinux & Windows
