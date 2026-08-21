@@ -41,4 +41,6 @@ Steps that go into this would include:
 - Data theft
 - Priv esc
 - System manipulation or disruption
-- 
+- Ransomware deployment
+- long term espionage - remain hidden to gather intel
+- Destruction
