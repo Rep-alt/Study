@@ -19,7 +19,9 @@ Steps that go into this would include:
 - startup folder entries
 - browser extensions
 - kernel-level implants
-
+- security tools
+- firewall rules
+- accounts
 
 **Command and Control** - 
 
