@@ -35,6 +35,6 @@ Steps that go into this would include:
 	- move laterally
 	- exfiltrate data
 	- escalate privileges
-	- download a
+	- download additional payloads
 
 **Actions on Objective** - 
