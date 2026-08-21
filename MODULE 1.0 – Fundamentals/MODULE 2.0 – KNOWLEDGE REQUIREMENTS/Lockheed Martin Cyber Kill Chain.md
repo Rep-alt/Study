@@ -5,8 +5,8 @@ Steps that go into this would include:
 - Gather information  ( Collect emails, usernames, tech stack, ip ranges, exposed services )
 - Map weaknesses (Look for outdated systems. misconfigurations)
 Weaponization - Creating a malicious payload and using an exploit to make the delivery
-Delivery - Transmission of the payload to the victim via Phishing emails, Drive-by downloads, USB drops, social engineering, and Exp
-Exploitation - 
+Delivery - Transmission of the payload to the victim via Phishing emails, Drive-by downloads, USB drops, social engineering, and **Exploiting Exposed Services**
+Exploitation - The delivered payload is activated
 Installation - 
 Command and Control - 
 Actions on Objective - 
