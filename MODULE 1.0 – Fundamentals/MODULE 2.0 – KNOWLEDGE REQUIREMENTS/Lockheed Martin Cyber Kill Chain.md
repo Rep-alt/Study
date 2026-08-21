@@ -23,6 +23,6 @@ Steps that go into this would include:
 - firewall rules
 - accounts
 
-**Command and Control** - 
+**Command and Control** - When the installed 
 
 **Actions on Objective** - 
