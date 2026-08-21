@@ -7,6 +7,15 @@ Steps that go into this would include:
 Weaponization - Creating a malicious payload and using an exploit to make the delivery
 Delivery - Transmission of the payload to the victim via Phishing emails, Drive-by downloads, USB drops, social engineering, and **Exploiting Exposed Services**
 Exploitation - The delivered payload is activated by exploiting a vulnerability via software vulnerabilities, user execution, Misconfigurations, and script or code execution
-Installation -  This is where an attacker establishes a foothold in the victims network by installing malware or
+Installation -  This is where an attacker establishes a foothold in the victims network by installing malware or using methods to ensure persistence 
+- registry run keys
+    
+- scheduled tasks
+    
+- services
+    
+- startup folder entries
+- browser extensions
+- kernel-level implants
 Command and Control - 
 Actions on Objective - 
