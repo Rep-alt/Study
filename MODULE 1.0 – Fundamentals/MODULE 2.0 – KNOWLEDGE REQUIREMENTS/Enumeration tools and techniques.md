@@ -195,7 +195,7 @@ amass enum -d <domain>Passive/active subdomain enumCopied!
 
 theHarvester -d <domain> -b allEmail, subdomain harvestingCopied!
 
-🌐 Web EnumerationLinux
+####### 🌐 Web EnumerationLinux
 
 gobuster dir -u http://<target> -w /usr/share/wordlists/dirb/common.txtDirectory brute forceCopied!
 
@@ -223,7 +223,7 @@ feroxbuster -u http://<target> -w wordlist.txtRecursive directory brute forceCop
 
 python3 -m http.server 80Serve files (attacker machine)Copied!
 
-🗂️ SMB EnumerationLinux
+######## 🗂️ SMB EnumerationLinux
 
 smbclient -L //<target>/ -NList shares (anonymous)Copied!
 
@@ -255,7 +255,7 @@ impacket-smbclient <target>SMBclient via ImpacketCopied!
 
 nmap --script smb-vuln-ms17-010 <target>Check EternalBlueCopied!
 
-🏰 Active Directory EnumerationLinux & Windows
+######### 🏰 Active Directory EnumerationLinux & Windows
 
 bloodhound-python -u user -p pass -d domain.local -ns <dc-ip> -c AllBloodHound data collectionCopied!
 
@@ -291,7 +291,7 @@ powerview: Find-LocalAdminAccessPowerView: find machines where current user is a
 
 powerview: Get-DomainTrustPowerView: enumerate domain trustsCopied!
 
-🔑 SNMP EnumerationLinux
+###########🔑 SNMP EnumerationLinux
 
 snmpwalk -v1 -c public <target>SNMPv1 walk with 'public' communityCopied!
 
@@ -309,7 +309,7 @@ hydra -P community.txt <target> snmpBrute force SNMP communitiesCopied!
 
 nmap -sU -p 161 --script=snmp-brute <target>Nmap SNMP bruteCopied!
 
-##### 📋 Local System Enumeration – LinuxLinux
+############ 📋 Local System Enumeration – LinuxLinux
 
 uname -aKernel versionCopied!
 
@@ -343,7 +343,7 @@ crontab -l && cat /etc/crontabCron jobsCopied!
 
 iptables -LFirewall rulesCopied!
 
-###### Local System Enumeration – WindowsWindows
+############ Local System Enumeration – WindowsWindows
 
 systeminfoFull system infoCopied!
 
