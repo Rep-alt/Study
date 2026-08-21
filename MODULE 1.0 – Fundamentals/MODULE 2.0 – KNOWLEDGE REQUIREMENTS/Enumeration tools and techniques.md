@@ -35,57 +35,57 @@
 
 	-nmap -O <target>OS detectionCopied!
 
-	-nmap -A -T4 <target>Aggressive scan (OS, version, scripts, traceroute)Copied!
+	nmap -A -T4 <target>Aggressive scan (OS, version, scripts, traceroute)Copied!
 
-nmap --script vuln <target>Run vulnerability detection scriptsCopied!
-
-nmap --script smb-enum-users <target>Enumerate SMB usersCopied!
-
-nmap --script smb-enum-shares <target>Enumerate SMB sharesCopied!
-
-nmap --script ldap-search <target>LDAP enumerationCopied!
-
-nmap -p 80,443 --script http-title <target>Grab HTTP titlesCopied!
-
-nmap -oN output.txt -oX output.xml <target>Save output (normal + XML)Copied!
-
-nmap -iL targets.txt -sVScan from host listCopied!
-
-nmap -sV --script=banner <target>Banner grabbingCopied!
-
-nmap --script dns-brute <target>DNS brute forceCopied!
+	nmap --script vuln <target>Run vulnerability detection scriptsCopied!
+	
+	nmap --script smb-enum-users <target>Enumerate SMB usersCopied!
+	
+	nmap --script smb-enum-shares <target>Enumerate SMB sharesCopied!
+	
+	nmap --script ldap-search <target>LDAP enumerationCopied!
+	
+	nmap -p 80,443 --script http-title <target>Grab HTTP titlesCopied!
+	
+	nmap -oN output.txt -oX output.xml <target>Save output (normal + XML)Copied!
+	
+	nmap -iL targets.txt -sVScan from host listCopied!
+	
+	nmap -sV --script=banner <target>Banner grabbingCopied!
+	
+	nmap --script dns-brute <target>DNS brute forceCopied!
 
 🪟 enum4linux – SMB/Samba EnumerationLinux
 
 	-enum4linux <target>Quick default enumerationCopied!
 
-enum4linux -a <target>Full enumeration (all checks)Copied!
-
-enum4linux -U <target>Enumerate usersCopied!
-
-enum4linux -G <target>Enumerate groupsCopied!
-
-enum4linux -S <target>Enumerate sharesCopied!
-
-enum4linux -P <target>Get password policyCopied!
-
-enum4linux -N <target>NetBIOS namesCopied!
-
-enum4linux -R <target>RID cycling (user enumeration)Copied!
-
-enum4linux -D <target>Domain enumerationCopied!
-
-enum4linux -r <target>Enumerate users via RID cyclingCopied!
-
-enum4linux -u 'admin' -p 'pass' -a <target>Authenticated full scanCopied!
-
-enum4linux -W WORKGROUP -a <target>Specify workgroupCopied!
-
-enum4linux -a -T 20 <target>Set RPC timeout to 20sCopied!
-
-enum4linux-ng -A <target> -oJ out.jsonFull scan, JSON output (ng version)Copied!
-
-enum4linux-ng -S <target>List shares only (ng version)Copied!
+	enum4linux -a <target>Full enumeration (all checks)Copied!
+	
+	enum4linux -U <target>Enumerate usersCopied!
+	
+	enum4linux -G <target>Enumerate groupsCopied!
+	
+	enum4linux -S <target>Enumerate sharesCopied!
+	
+	enum4linux -P <target>Get password policyCopied!
+	
+	enum4linux -N <target>NetBIOS namesCopied!
+	
+	enum4linux -R <target>RID cycling (user enumeration)Copied!
+	
+	enum4linux -D <target>Domain enumerationCopied!
+	
+	enum4linux -r <target>Enumerate users via RID cyclingCopied!
+	
+	enum4linux -u 'admin' -p 'pass' -a <target>Authenticated full scanCopied!
+	
+	enum4linux -W WORKGROUP -a <target>Specify workgroupCopied!
+	
+	enum4linux -a -T 20 <target>Set RPC timeout to 20sCopied!
+	
+	enum4linux-ng -A <target> -oJ out.jsonFull scan, JSON output (ng version)Copied!
+	
+	enum4linux-ng -S <target>List shares only (ng version)Copied!
 
 🪟 WindowsEnum – Windows Local EnumerationWindows
 
@@ -113,7 +113,7 @@ enum4linux-ng -S <target>List shares only (ng version)Copied!
 	
 	WindowsEnum checks: AV/EDR product detectionAntivirus & EDR identificationCopied!
 
- JAWS – Just Another Windows Enum ScriptWindows
+JAWS – Just Another Windows Enum ScriptWindows
 
 	-powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1Run JAWSCopied!
 
@@ -140,6 +140,7 @@ enum4linux-ng -S <target>List shares only (ng version)Copied!
 	JAWS checks: Interesting files (passwords, configs)Sensitive file discoveryCopied!
 	
 	JAWS checks: Potential privilege escalation vectorsPrivesc vector identificationCopied!
+
 🌐 Network EnumerationLinux & Windows
 
 	-netdiscover -r 192.168.1.0/24ARP host discoveryCopied!
