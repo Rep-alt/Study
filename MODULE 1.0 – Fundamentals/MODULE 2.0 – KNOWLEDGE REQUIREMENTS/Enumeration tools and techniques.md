@@ -257,7 +257,7 @@ nmap --script smb-vuln-ms17-010 <target>Check EternalBlueCopied!
 
 🏰 Active Directory EnumerationLinux & Windows
 
-bloodhound-python -u user -p pass -d domain.local -ns <dc-ip> -c AllBloodHound data collectionCopied!
+	-bloodhound-python -u user -p pass -d domain.local -ns <dc-ip> -c AllBloodHound data collectionCopied!
 
 SharpHound.exe -c AllBloodHound (Windows, C# ingestor)Copied!
 
@@ -291,7 +291,7 @@ powerview: Find-LocalAdminAccessPowerView: find machines where current user is a
 
 powerview: Get-DomainTrustPowerView: enumerate domain trustsCopied!
 
-###########🔑 SNMP EnumerationLinux
+	-🔑 SNMP EnumerationLinux
 
 snmpwalk -v1 -c public <target>SNMPv1 walk with 'public' communityCopied!
 
@@ -309,9 +309,9 @@ hydra -P community.txt <target> snmpBrute force SNMP communitiesCopied!
 
 nmap -sU -p 161 --script=snmp-brute <target>Nmap SNMP bruteCopied!
 
-############ 📋 Local System Enumeration – LinuxLinux
+📋 Local System Enumeration – LinuxLinux
 
-uname -aKernel versionCopied!
+	-uname -aKernel versionCopied!
 
 cat /etc/os-releaseOS infoCopied!
 
@@ -343,9 +343,9 @@ crontab -l && cat /etc/crontabCron jobsCopied!
 
 iptables -LFirewall rulesCopied!
 
-############# Local System Enumeration – WindowsWindows
+Local System Enumeration – WindowsWindows
 
-systeminfoFull system infoCopied!
+	-systeminfoFull system infoCopied!
 
 whoami /allFull user info + privilegesCopied!
 
@@ -359,20 +359,20 @@ ipconfig /allNetwork configCopied!
 
 netstat -anoActive connectionsCopied!
 
-tasklist /SVCRunning processes with servicesCopied!
+	-tasklist /SVCRunning processes with servicesCopied!
 
-wmic product get name,versionInstalled softwareCopied!
+	-wmic product get name,versionInstalled softwareCopied!
 
-wmic os getOS infoCopied!
+	-wmic os getOS infoCopied!
 
-wmic qfe list briefInstalled patchesCopied!
+	-wmic qfe list briefInstalled patchesCopied!
 
-reg query HKLM\System\CurrentControlSet\ServicesInstalled servicesCopied!
+	-reg query HKLM\System\CurrentControlSet\ServicesInstalled servicesCopied!
 
-dir /a /s C:\*.txt 2>nulSearch for text filesCopied!
+	-dir /a /s C:\*.txt 2>nulSearch for text filesCopied!
 
-dir /a /s C:\*pass* 2>nulSearch for password filesCopied!
+	-dir /a /s C:\*pass* 2>nulSearch for password filesCopied!
 
-findstr /si password *.txt *.xml *.iniSearch for passwords in filesCopied!
+	-findstr /si password *.txt *.xml *.iniSearch for passwords in filesCopied!
 
-cmdkey /listStored credentials
+	-cmdkey /listStored credentials
