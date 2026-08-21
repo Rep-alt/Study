@@ -37,4 +37,8 @@ Steps that go into this would include:
 	- escalate privileges
 	- download additional payloads
 
-**Actions on Objective** - Finally, mission execution,
+**Actions on Objective** - Finally, mission execution, this is where we finally made it onto an objective and can now accomplish the goal:
+- Data theft
+- Priv esc
+- System manipulation or disruption
+- 
