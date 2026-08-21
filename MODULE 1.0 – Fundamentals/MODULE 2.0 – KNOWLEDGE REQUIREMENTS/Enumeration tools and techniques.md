@@ -23,7 +23,7 @@
 
 **When:** Run this **right after landing on a Windows box**, particularly when you're a low-privileged user trying to escalate. It's a PowerShell script, so it's easy to transfer and run in-memory. Many testers run both JAWS and WindowsEnum together for a more complete picture, or choose JAWS when privesc is the immediate goal.
 
-Nmap – Network ScanningLinux & Windows
+# Nmap – Network ScanningLinux & Windows
 
 nmap -sn 192.168.1.0/24Host discovery (ping sweep)Copied!
 
@@ -309,7 +309,7 @@ hydra -P community.txt <target> snmpBrute force SNMP communitiesCopied!
 
 nmap -sU -p 161 --script=snmp-brute <target>Nmap SNMP bruteCopied!
 
-📋 Local System Enumeration – LinuxLinux
+##### 📋 Local System Enumeration – LinuxLinux
 
 uname -aKernel versionCopied!
 
