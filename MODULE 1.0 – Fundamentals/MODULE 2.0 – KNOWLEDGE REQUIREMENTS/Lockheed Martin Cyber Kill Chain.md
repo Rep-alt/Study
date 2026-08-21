@@ -23,6 +23,6 @@ Steps that go into this would include:
 - firewall rules
 - accounts
 
-**Command and Control** - When the installed 
+**Command and Control** - When the installed malware enables a connection to the attackers infrastructure to control the compromised system.
 
 **Actions on Objective** - 
