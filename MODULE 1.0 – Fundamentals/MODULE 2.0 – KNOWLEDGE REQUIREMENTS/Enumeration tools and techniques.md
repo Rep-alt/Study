@@ -16,14 +16,11 @@
 **Why:** Once you have a shell or RDP access on a Windows machine, you need to understand _exactly_ what you're working with — the OS version, patch level, local users, running services, and autoruns. This feeds your privilege escalation decision-making.
 
 **When:** Used **immediately after gaining initial access** to a Windows host. You've landed a shell — now you need situational awareness before you make your next move. WindowsEnum automates the tedious manual commands so you can survey the host quickly without triggering too much noise.
-
 ##  4. JAWS – Just Another Windows Enum Script
 
 **Why:** JAWS does very similar work to WindowsEnum but is specifically tuned to surface **privilege escalation vectors** — writable paths, unquoted service paths, interesting files, and credential clues. It's more privesc-focused than general situational awareness.
 
 **When:** Run this **right after landing on a Windows box**, particularly when you're a low-privileged user trying to escalate. It's a PowerShell script, so it's easy to transfer and run in-memory. Many testers run both JAWS and WindowsEnum together for a more complete picture, or choose JAWS when privesc is the immediate goal.
-
-
 
 Nmap – Network ScanningLinux & Windows
 
