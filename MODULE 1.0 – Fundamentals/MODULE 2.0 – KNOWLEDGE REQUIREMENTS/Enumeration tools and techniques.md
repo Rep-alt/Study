@@ -89,7 +89,7 @@ enum4linux-ng -S <target>List shares only (ng version)Copied!
 
 🪟 WindowsEnum – Windows Local EnumerationWindows
 
-powershell -ep bypass .\WindowsEnum.ps1Run with execution policy bypassCopied!
+	-powershell -ep bypass .\WindowsEnum.ps1Run with execution policy bypassCopied!
 
 .\WindowsEnum.ps1Basic local system enumerationCopied!
 
@@ -113,9 +113,9 @@ WindowsEnum checks: PowerShell history and transcriptPS history & transcript fil
 
 WindowsEnum checks: AV/EDR product detectionAntivirus & EDR identificationCopied!
 
-#### 🦅 JAWS – Just Another Windows Enum ScriptWindows
+ JAWS – Just Another Windows Enum ScriptWindows
 
-powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1Run JAWSCopied!
+	-powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1Run JAWSCopied!
 
 powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1 -OutputFilename JAWS-Enum.txtSave output to fileCopied!
 
@@ -143,9 +143,9 @@ JAWS checks: Potential privilege escalation vectorsPrivesc vector identification
 
 
 
-##### 🌐 Network EnumerationLinux & Windows
+🌐 Network EnumerationLinux & Windows
 
-netdiscover -r 192.168.1.0/24ARP host discoveryCopied!
+	-netdiscover -r 192.168.1.0/24ARP host discoveryCopied!
 
 arp-scan --localnetARP scan local networkCopied!
 
@@ -171,9 +171,9 @@ snmpwalk -v2c -c public <target>SNMP walkCopied!
 
 snmp-check <target>SNMP info dumpCopied!
 
-###### 🌍 DNS EnumerationLinux
+🌍 DNS EnumerationLinux
 
-dnsrecon -d <domain> -t stdStandard DNS reconCopied!
+	-dnsrecon -d <domain> -t stdStandard DNS reconCopied!
 
 dnsrecon -d <domain> -t axfrZone transfer attemptCopied!
 
@@ -195,9 +195,9 @@ amass enum -d <domain>Passive/active subdomain enumCopied!
 
 theHarvester -d <domain> -b allEmail, subdomain harvestingCopied!
 
-####### 🌐 Web EnumerationLinux
+🌐 Web EnumerationLinux
 
-gobuster dir -u http://<target> -w /usr/share/wordlists/dirb/common.txtDirectory brute forceCopied!
+	-gobuster dir -u http://<target> -w /usr/share/wordlists/dirb/common.txtDirectory brute forceCopied!
 
 gobuster dir -u http://<target> -w wordlist.txt -x php,html,txtWith extensionsCopied!
 
@@ -223,9 +223,9 @@ feroxbuster -u http://<target> -w wordlist.txtRecursive directory brute forceCop
 
 python3 -m http.server 80Serve files (attacker machine)Copied!
 
-######## 🗂️ SMB EnumerationLinux
+🗂️ SMB EnumerationLinux
 
-smbclient -L //<target>/ -NList shares (anonymous)Copied!
+	-smbclient -L //<target>/ -NList shares (anonymous)Copied!
 
 smbclient //<target>/share -NConnect to share (anonymous)Copied!
 
@@ -255,7 +255,7 @@ impacket-smbclient <target>SMBclient via ImpacketCopied!
 
 nmap --script smb-vuln-ms17-010 <target>Check EternalBlueCopied!
 
-######### 🏰 Active Directory EnumerationLinux & Windows
+🏰 Active Directory EnumerationLinux & Windows
 
 bloodhound-python -u user -p pass -d domain.local -ns <dc-ip> -c AllBloodHound data collectionCopied!
 
